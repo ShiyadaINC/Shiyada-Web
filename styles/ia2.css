@@ -1,0 +1,146 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  /* Image styling */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+
+
+
+
+  /* Second Page Layout */
+
+
+
+
+
+  /* Active navigation link */
+.sidebar nav ul li a.active {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+/* Page headings */
+h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+h3 {
+    margin: 25px 0 15px 0;
+    color: #444;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Gallery layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.caption {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Contact section */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
