@@ -87,6 +87,7 @@
 
 /* Page headings */
 h2 {
+    font-family: Helvetica;
     margin: 0 0 20px 0;
     color: #333;
     border-bottom: 2px solid #f4f4f4;
@@ -100,6 +101,7 @@ h3 {
 
 /* Paragraph styling */
 p {
+    font-family: Helvetica;
     margin-bottom: 15px;
     line-height: 1.6;
 }
@@ -126,7 +128,7 @@ p {
 
 .gallery-item img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     margin: 0;
 }
