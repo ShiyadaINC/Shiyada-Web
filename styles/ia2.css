@@ -6,16 +6,16 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica;
     line-height: 1.6;
   }
   
   /* Container styles */
   .container {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    max-width: 1200px;
+    padding: 0;
     margin: 0 auto;
   }
   
@@ -25,10 +25,14 @@
     background-color: #f4f4f4;
     padding: 20px;
     border-right: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
   }
   
   .sidebar header h1 {
-
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #333;
@@ -60,6 +64,7 @@
   .main-content {
     flex: 1;
     padding: 40px;
+    margin-left: 250px;
   }
   
   /* Image styling */
@@ -70,14 +75,7 @@
     margin: 20px 0;
   }
 
-
-
-
   /* Second Page Layout */
-
-
-
-
 
   /* Active navigation link */
 .sidebar nav ul li a.active {
@@ -140,10 +138,43 @@ p {
     margin: 0;
 }
 
-/* Contact section */
-.contact-info {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 30px;
+
+@media screen and (max-width: 768px)  {
+  .container {
+    flex-direction: column;
+  }
+  
+  /* Adjust sidebar for top placement */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    z-index: 10;
+  }
+  
+
+  .sidebar header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sidebar nav ul li {
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+
+  .main-content {
+      margin-left: 0;
+      padding: 30px;
+      height: 15px;
+      width: auto;
+  }
 }
