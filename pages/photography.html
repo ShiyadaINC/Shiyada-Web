@@ -37,48 +37,69 @@
             <div class="gallery">
                 <div class="gallery-item">
                     <h2>Golden Gate Bridge</h2>
-                    <img src="../Photography/Golden Gate Bridge/IG-1.jpg" alt="">
-                    <img src="../Photography/Golden Gate Bridge/IG-2.jpg" alt="">
-                    <img src="../Photography/Golden Gate Bridge/IG-3.jpg" alt="">
-                    <img src="../Photography/Golden Gate Bridge/IG-4.jpg" alt="">
+                    <img src="../Photography/Golden Gate Bridge/IG-1.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Golden Gate Bridge/IG-2.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Golden Gate Bridge/IG-3.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Golden Gate Bridge/IG-4.jpg" onclick="FullView(this.src)" alt="">
                 </div>
                 <div class="gallery-item">
                     <h2>New York City</h2>
-                    <img src="../Photography/NYC/DSC01664-Enhanced-NR.jpg"alt="">
-                    <img src="../Photography/NYC/DSC01674-Enhanced-NR.jpg"alt="">
-                    <img src="../Photography/NYC/DSC01675-Enhanced-NR.jpg"alt="">
-                    <img src="../Photography/NYC/DSC01678.jpg"alt="">
-                    <img src="../Photography/NYC/DSC01680.jpg"alt="">
-                    <img src="../Photography/NYC/DSC01711.jpg"alt="">
+                    <img src="../Photography/NYC/DSC01664-Enhanced-NR.jpg"onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/NYC/DSC01674-Enhanced-NR.jpg"onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/NYC/DSC01675-Enhanced-NR.jpg"onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/NYC/DSC01678.jpg"onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/NYC/DSC01680.jpg"onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/NYC/DSC01711.jpg"onclick="FullView(this.src)" alt="">
                 </div>
                 <div class="gallery-item">
                     <h2>Cambodian Buddhist Temple (California)</h2>
-                    <img src="../Photography/Temple/IG-1.jpg" alt="">
-                    <img src="../Photography/Temple/IG-2.jpg" alt="">
-                    <img src="../Photography/Temple/IG-3.jpg" alt="">
+                    <img src="../Photography/Temple/IG-1.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Temple/IG-2.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Temple/IG-3.jpg" onclick="FullView(this.src)" alt="">
                 </div>
                 <div class="gallery-item">
                     <h2>Japan Town</h2>
-                    <img src="../Photography/Japan Town/DSC01289.JPG" alt="">
-                    <img src="../Photography/Japan Town/IG-2.jpg" alt="">
-                    <img src="../Photography/Japan Town/IG-1.jpg" alt="">
-                    <img src="../Photography/Japan Town/IG-3.jpg" alt="">
+                    <img src="../Photography/Japan Town/DSC01289.JPG" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Japan Town/IG-2.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Japan Town/IG-1.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Japan Town/IG-3.jpg" onclick="FullView(this.src)" alt="">
                 </div>
                 <div class="gallery-item">
                     <h2>Buildings</h2>
-                    <img src="../Photography/Buildings/DSC01548.jpg"alt="">
-                    <img src="../Photography/Buildings/DSC01552.jpg"alt="">
-                    <img src="../Photography/Buildings/DSC01553.jpg"alt="">
-                    <img src="../Photography/Buildings/DSC01554.jpg"alt="">
-                    <img src="../Photography/Buildings/DSC01922.jpg"alt="">
-                    <img src="../Photography/Buildings/DSC01911.jpg"alt="">
+                    <img src="../Photography/Buildings/DSC01548.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Buildings/DSC01552.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Buildings/DSC01553.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Buildings/DSC01554.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Buildings/DSC01922.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/Buildings/DSC01911.jpg" onclick="FullView(this.src)" alt="">
                 </div>
                 <div class="gallery-item">
-                    <h2>Cats</h2>
-                    <img src="../Photography/The cats/DSC01770.jpg" alt="">
-                    <img src="../Photography/The cats/DSC01769.jpg" alt="">
-                    <img src="../Photography/The cats/DSC01772.jpg" alt="">
+                    <h2>Cat Cafe (Mew Haven)</h2>
+                    <img src="../Photography/The cats/DSC01770.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/The cats/DSC01769.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="../Photography/The cats/DSC01772.jpg" onclick="FullView(this.src)" alt="">
                 </div>
+
+                <div id="FullImageView">
+                    <div class="modal-content">
+                        <img id="FullImage" />
+                        <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+                    </div>
+                </div>
+                <script type="text/Javascript">
+                    function FullView(ImgLink) {
+                        document.getElementById("FullImage").src = ImgLink;
+                        document.getElementById("FullImageView").style.display = "flex";
+                    }
+                    function CloseFullView() {
+                        document.getElementById("FullImageView").style.display = "none";
+                    }
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === 'Escape') {
+                            CloseFullView();
+                        }
+                    });
+                </script>
             </section>
         </div>
     </div>
