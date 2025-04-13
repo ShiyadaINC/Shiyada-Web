@@ -66,6 +66,13 @@
     padding: 40px;
     margin-left: 250px;
   }
+
+  .main-image {
+    flex: 1;
+    padding: 40px;
+    margin-left: -79px;
+    
+  }
   
   /* Image styling */
   img {
