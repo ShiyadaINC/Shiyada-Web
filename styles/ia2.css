@@ -71,7 +71,6 @@
     flex: 1;
     padding: 40px;
     margin-left: -79px;
-    
   }
   
   /* Image styling */
@@ -109,6 +108,13 @@ p {
     font-family: Helvetica;
     margin-bottom: 15px;
     line-height: 1.6;
+}
+
+@keyframes fade-up{
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
 }
 
 /* Gallery layout */
@@ -163,6 +169,7 @@ p {
   height: 1080px;
   object-fit: contain; 
   margin: 0 auto;
+  animation: fade-up 0.5s;
 }
 
 #CloseButton {
