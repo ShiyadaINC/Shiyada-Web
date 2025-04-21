@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me - Shiyada Incorporation</title>
+    <title>Graphics - Shiyada Incorporation</title>
     <link rel="stylesheet" href="../styles/ia2.css">
 </head>
 <body>
@@ -35,12 +35,35 @@
 
         <body>
             <div class="main-content">
-                <h1>Graphics</h1>
+                <h1>Graphics Showcase</h1>
+                <p>Created using Adobe Photoshop</p>
                 <div class="gallery">
                     <div class="gallery-item">
                         <h2>Posters</h2>
-                        <img src="../Graphics/Matcha Poster.jpg" alt=""></a>
+                        <img src="../Graphics/Matcha Poster.jpg" onclick="FullView(this.src)" alt=""></a>
                     </div>
                 </div>
             </div>
         </body>
+
+                <div id="FullImageView">
+                    <div class="modal-content">
+                        <img id="FullImage" />
+                        <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+                    </div>
+                </div>
+                
+                <script type="text/Javascript">
+                    function FullView(ImgLink) {
+                        document.getElementById("FullImage").src = ImgLink;
+                        document.getElementById("FullImageView").style.display = "flex";
+                    }
+                    function CloseFullView() {
+                        document.getElementById("FullImageView").style.display = "none";
+                    }
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === 'Escape') {
+                            CloseFullView();
+                        }
+                    });
+                </script>
