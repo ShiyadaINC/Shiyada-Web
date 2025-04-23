@@ -9,6 +9,15 @@
     font-family: 'Noto sans JP', sans-serif;
     line-height: 1.6;
   }
+
+  .copyright{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.8rem;
+    color: #888;
+    z-index: 99;
+  }
   
   /* Container styles */
   .container {
@@ -98,7 +107,7 @@ h1 {
 h2 {
     margin: 0 0 20px 0;
     color: #1F2937;
-    border-bottom: 2px solid #f4f4f4;
+    border-bottom: 2px solid #d6dbdf;
     padding-bottom: 10px;
 }
 
@@ -231,4 +240,62 @@ p {
       height: 15px;
       width: auto;
   }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-items: start;
+    gap: 15px;
+    margin: 30px 0;
+  }
+}
+
+/*@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #090d11;
+    color: #fff;
+  }
+  h1{
+    color: #fff;
+  }
+  h2{
+    color: #fff;
+  }
+  
+  .sidebar {
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #202434;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+  }
+
+  .sidebar header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar nav ul li a:hover {
+    background-color: #202434;
+    border-radius: 4px;
+  }
+  
+  .sidebar nav ul li a.active {
+    background-color: #202434;
+    font-weight: bold;
+}
+
 }
