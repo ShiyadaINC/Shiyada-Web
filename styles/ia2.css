@@ -89,6 +89,8 @@
 }
 
 /* Page headings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Shippori+Mincho&display=swap');
+
 h1 {
   color: #1F2937;
 }
@@ -107,7 +109,7 @@ h3 {
 
 /* Paragraph styling */
 p {
-  font-family: 'Yu Mincho','MS Mincho', serif;
+  font-family: "Inter", sans-serif;
     margin-bottom: 15px;
     line-height: 1.25;
 }
