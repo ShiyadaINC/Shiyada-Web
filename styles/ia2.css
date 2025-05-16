@@ -251,7 +251,7 @@ p {
   }
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #090d11;
     color: #fff;
@@ -261,6 +261,7 @@ p {
   }
   h2{
     color: #fff;
+    border-bottom: solid 2px #1F2937;
   }
   
   .sidebar {
