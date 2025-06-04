@@ -273,6 +273,7 @@ p {
     left: 0;
     top: 0;
     overflow-y: auto;
+    color: #000000;
   }
 
   .sidebar header h1 {
