@@ -89,6 +89,10 @@
     margin: 20px 0;
   }
 
+  .shadow-effect {
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+
   /* Second Page Layout */
 
   /* Active navigation link */
